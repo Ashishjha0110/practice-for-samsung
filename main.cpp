@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+// function to count set bits
 int countsetbits(int n)
 {
   int count =0;
@@ -14,7 +15,18 @@ int countsetbits(int n)
   return count;
 }
 
-int 
-int main() {
+//function to return the count of flipped number
+int flipped_number(int a,int b)
+{
+  return countsetbits(a^b);
+}
 
+int main()
+{
+int x;
+int y;
+scanf("%d",&x);
+scanf("%d",&y);
+cout<<flipped_number(x,y)<<endl;
+return 0;
 }
